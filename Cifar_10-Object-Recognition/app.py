@@ -111,7 +111,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.header("Upload an image and get predictions!")
+st.header("Upload gambar disini dan dapatkan prediksinya!")
 
 # Image loading function
 def load_image(filename):
@@ -165,7 +165,7 @@ if st.button("Reload App"):
 
 # Additional CIFAR-10 Information
 st.markdown(""" 
-### **CIFAR-10 Classes**:
+### **Kelas CIFAR-10**:
 - <span title="✈️ Aircraft used in transportation and travel.">**airplane**</span>
 - <span title="🚗 Motor vehicles designed for roads.">**automobile**</span>
 - <span title="🐦 Creatures from the bird species.">**bird**</span>
@@ -187,6 +187,6 @@ data = {
 df = pd.DataFrame(data)
 
 # Stylish DataFrame
-st.markdown("### CIFAR-10 Class Performance")
+st.markdown("### CIFAR-10 Performa Kelas")
 styled_table = df.style.background_gradient(cmap="coolwarm", subset=['Accuracy', 'Precision'])
 st.dataframe(styled_table, height=400)
