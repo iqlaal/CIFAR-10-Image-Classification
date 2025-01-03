@@ -187,6 +187,6 @@ data = {
 df = pd.DataFrame(data)
 
 # Stylish DataFrame
-st.markdown("### CIFAR-10 Akurasi dan Prediksi")
+st.markdown("### CIFAR-10 Akurasi dan Presisi")
 styled_table = df.style.background_gradient(cmap="coolwarm", subset=['Accuracy', 'Precision'])
 st.dataframe(styled_table, height=400)
