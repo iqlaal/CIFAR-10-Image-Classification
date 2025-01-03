@@ -10,7 +10,7 @@ import time
 import streamlit_lottie as st_lottie
 
 # Streamlit page configuration
-st.set_page_config(page_title="Image Classification Hewan", page_icon="🖼️", layout="wide")
+st.set_page_config(page_title="Image Classification CIFAR - 10", page_icon="🖼️", layout="wide")
 
 # Load Lottie animation
 def load_lottie_url(url: str):
@@ -97,7 +97,7 @@ model = load_my_model()
 # Main title with cool text effect
 st.markdown("""
     <h1 style="text-align:center; color: #007bff; font-family: 'Courier New', Courier, monospace; animation: glow 2s ease-in-out infinite alternate;">
-    🖼️ Image Classification Hewan Kelompok 3
+    🖼️ Image Classification CIFAR - 10 Kelompok 3
     </h1>
     <style>
     @keyframes glow {
