@@ -21,10 +21,6 @@ def load_lottie_url(url: str):
 
 # Lottie Animation
 lottie_url = "https://lottie.host/de06d967-8825-499e-aa8c-a88dd15e1a08/dH2OtlPb3c.json"
-# lottie_url = "https://lottie.host/cb54b283-5df4-4a94-b096-f20609d6cedd/OieGG3bmfC.json"  # Replace with your Lottie URL
-# lottie_url = "https://lottie.host/93d88d16-07db-49ec-88dd-6d9d61060502/w2kjPNdxKk.json"  # Replace with your Lottie URL
-# lottie_url = "https://lottie.host/02b428b5-0ba4-4059-bc6f-acea19d2d1d7/4QgxxvnOEh.json"  # Replace with your Lottie URL
-# lottie_url = "https://lottie.host/a8aaf165-c79f-4286-be91-c340a8c81074/re1wEpOwh4.json"  # Replace with your Lottie URL
 lottie_animation = load_lottie_url(lottie_url)
 
 # Sidebar with unique elements
@@ -86,7 +82,7 @@ with st.sidebar:
 
 # CIFAR-10 class names
 class_names = [
-    ""bird", "cat", "deer",
+    "bird", "cat", "deer",
     "dog", "frog", "horse"
 ]
 
@@ -160,15 +156,6 @@ if image_file is not None:
             result = f"Prediction: {class_names[predicted_class[0]]} with {confidence*100:.2f}% confidence"
 
         st.success(result)
-
-        # Show confidence meter with cool design
-        # st.markdown(f"""
-        # <div class="confidence-bar">
-        #     <div class="confidence-fill" style="width:{confidence*100}%; background-color: {'#4caf50' if confidence >= confidence_threshold else '#ff5722'}">
-        #         {confidence*100:.2f}% confident
-        #     </div>
-        # </div>
-        # """, unsafe_allow_html=True)
 
         os.remove(img_path)
 
