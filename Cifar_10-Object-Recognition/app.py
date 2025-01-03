@@ -111,7 +111,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.header("Upload gambar disini dan dapatkan prediksinya!")
+st.header("Upload Gambar Disini dan Dapatkan Prediksinya!")
 
 # Image loading function
 def load_image(filename):
@@ -187,6 +187,6 @@ data = {
 df = pd.DataFrame(data)
 
 # Stylish DataFrame
-st.markdown("### CIFAR-10 Performa Kelas")
+st.markdown("### CIFAR-10 Akurasi dan Prediksi")
 styled_table = df.style.background_gradient(cmap="coolwarm", subset=['Accuracy', 'Precision'])
 st.dataframe(styled_table, height=400)
