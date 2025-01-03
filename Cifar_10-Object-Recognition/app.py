@@ -86,8 +86,8 @@ with st.sidebar:
 
 # CIFAR-10 class names
 class_names = [
-    "airplane", "automobile", "bird", "cat", "deer",
-    "dog", "frog", "horse", "ship", "truck"
+    ""bird", "cat", "deer",
+    "dog", "frog", "horse"
 ]
 
 # Load model
