@@ -101,7 +101,7 @@ model = load_my_model()
 # Main title with cool text effect
 st.markdown("""
     <h1 style="text-align:center; color: #007bff; font-family: 'Courier New', Courier, monospace; animation: glow 2s ease-in-out infinite alternate;">
-    🖼️ CIFAR-10 Image Classification
+    🖼️ Image Classification Hewan Kelompok 3
     </h1>
     <style>
     @keyframes glow {
