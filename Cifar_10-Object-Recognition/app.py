@@ -10,7 +10,7 @@ import time
 import streamlit_lottie as st_lottie
 
 # Streamlit page configuration
-st.set_page_config(page_title="CIFAR-10 Image Classification", page_icon="🖼️", layout="wide")
+st.set_page_config(page_title="Image Classification Hewan", page_icon="🖼️", layout="wide")
 
 # Load Lottie animation
 def load_lottie_url(url: str):
